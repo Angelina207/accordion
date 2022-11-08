@@ -29,9 +29,9 @@
     max-height: 205px;
     background-color: transparent;
     background-image: 
-        url('/img/email-box.png'),
-        url('/img/accordion.png'),
-        url('/img/shadow.png');
+        url('../img/email-box.png'),
+        url('../img/accordion.png'),
+        url('../img/shadow.png');
     background-repeat: no-repeat; 
     background-position:
         7% 80%, 
@@ -122,10 +122,10 @@
         display: flex;
 
         background-image: 
-        url('/img/accordion-big.png'),
-        url('/img/shadow-big.png'),
-        url('/img/border.png'),
-        url('/img/border.png');
+        url('../img/accordion-big.png'),
+        url('../img/shadow-big.png'),
+        url('../img/border.png'),
+        url('../img/border.png');
         background-repeat: no-repeat; 
         background-position:
         -20% 40%,
@@ -139,7 +139,7 @@
         left: -92px;
         width: 200px;
         height: 160px;
-        background-image: url('/img/email-box-big.png');
+        background-image: url('../img/email-box-big.png');
         background-repeat: no-repeat;
     }
     .accordion-body::before {
