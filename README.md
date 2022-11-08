@@ -1,5 +1,5 @@
-# Accordion
+# Accordion FAQ
 
-GitGub Page:
+GitGub Page: https://angelina207.github.io/accordion/
 
 
