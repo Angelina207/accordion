@@ -84,6 +84,7 @@ p {
   color: #4B4C5F;
   transition: all 250ms ease-out;
   padding: 18px 13px 18px 0;
+  cursor: pointer;
 }
 .accordion-question:focus, .accordion-question:hover {
   color: #F47B56;

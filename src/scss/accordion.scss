@@ -58,6 +58,7 @@
     color: #4B4C5F;
     transition: all 250ms ease-out;
     padding: 18px 13px 18px 0;
+    cursor: pointer;
     &:focus,
     &:hover {
         color: #F47B56;
@@ -120,7 +121,6 @@
         position: relative;
         max-width: 820px;
         display: flex;
-
         background-image: 
         url('../img/accordion-big.png'),
         url('../img/shadow-big.png'),

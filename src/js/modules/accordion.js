@@ -9,23 +9,24 @@ export function accordion() {
                 let currContent = el.nextElementSibling;
                 let currArrow = el.lastElementChild;
 
+                function resetStyles() {
+                    accordionQuestion.forEach(item => item.classList.remove('is-active'));
+                    accordionAnswer.forEach(item => item.style.maxHeight = null);
+                    accordionAnswer.forEach(item => item.style.paddingBottom = null);
+                    accordionArrow.forEach(item => item.style.transform = 'rotate(0deg)');
+                }
+
                 if (currContent.style.maxHeight) {
-                    accordionQuestion.forEach(item => item.classList.remove('is-active'));
-                    accordionAnswer.forEach(item => item.style.maxHeight = null);
-                    accordionAnswer.forEach(item => item.style.paddingBottom = null);
-                    accordionArrow.forEach(item => item.style.transform = 'rotate(0deg)');
+                    resetStyles()
                 } else {
-                    accordionQuestion.forEach(item => item.classList.remove('is-active'));
-                    accordionAnswer.forEach(item => item.style.maxHeight = null);
-                    accordionAnswer.forEach(item => item.style.paddingBottom = null);
-                    accordionArrow.forEach(item => item.style.transform = 'rotate(0deg)');
+                    resetStyles()
 
                     el.classList.add('is-active');
                     currContent.style.maxHeight = currContent.scrollHeight + 'px';
                     currContent.style.paddingBottom = 19 + 'px';
                     currArrow.style.transform = 'rotate(180deg)';
                 }
-            });
-        });
+            })
+        })
     })()
 }
